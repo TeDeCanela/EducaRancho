@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.educarancho.controladores.FXMLJuegoExpertosController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button id="btnRegresar" fx:id="btnRegresar" layoutX="20.0" layoutY="24.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+            <Button id="btnReintentar" fx:id="btnReintentar" layoutX="387.0" layoutY="24.0" mnemonicParsing="false" onAction="#reintentar" text="Reintentar" />
+            <Button id="btnAyuda" fx:id="btnAyuda" layoutX="511.0" layoutY="24.0" mnemonicParsing="false" onAction="#solicitarAyuda" text="Ayuda" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0d1c9" height="79.0" layoutX="20.0" layoutY="76.0" stroke="#8f3939" strokeType="INSIDE" width="561.0" />
+            <Label id="lblPregunta" fx:id="lblPregunta" layoutX="37.0" layoutY="88.0" prefHeight="63.0" prefWidth="539.0" text="Label" wrapText="true" />
+            <Label layoutX="18.0" layoutY="165.0" text="Escribe tu respuesta:" />
+            <Button id="btnSiguientePreguntar" fx:id="btnSiguientePreguntar" layoutX="443.0" layoutY="348.0" mnemonicParsing="false" onAction="#irSiguientePregunta" text="Siguiente pregunta" />
+            <Label layoutX="23.0" layoutY="214.0" text="Escribe el número" />
+            <Label layoutX="184.0" layoutY="214.0" text="Escribe el objeto del resultado" />
+            <TextField id="txtNumero" fx:id="txtNumero" layoutX="23.0" layoutY="243.0" prefHeight="26.0" prefWidth="94.0" />
+            <TextField id="txtUnidades" fx:id="txtUnidades" layoutX="178.0" layoutY="244.0" prefHeight="26.0" prefWidth="160.0" />
+            <Button id="btnCalificar" fx:id="btnCalificar" layoutX="25.0" layoutY="348.0" mnemonicParsing="false" onAction="#calificar" text="Calificar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

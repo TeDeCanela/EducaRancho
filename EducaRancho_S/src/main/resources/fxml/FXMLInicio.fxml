@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="656.0" styleClass="#eee3d6" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.educarancho.controladores.FXMLInicioController">
+   <children>
+      <Text layoutX="188.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Entrena tus habilidades de multiplicaicón!" />
+      <Text layoutX="39.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecciona la dificultad" />
+      <Button id="btnPrincipiantes" fx:id="btnPrincipiantes" layoutX="39.0" layoutY="92.0" mnemonicParsing="false" onAction="#cambiarDificultadFacil" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #e0eed6;" text="Principiantes" />
+      <Button id="btnHabiles" fx:id="btnHabiles" layoutX="182.0" layoutY="92.0" mnemonicParsing="false" onAction="#cambiarDificultadHabiles" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #FAFAD2;" text="Hábiles" />
+      <Button id="btnExpertos" fx:id="btnExpertos" layoutX="310.0" layoutY="92.0" mnemonicParsing="false" onAction="#cambiarDificultadExpertos" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="Expertos" />
+      <Text layoutX="39.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Quieres tiempo en tus problemas?" />
+      <RadioButton id="btnNoTiempo" fx:id="btnNoTiempo" layoutX="39.0" layoutY="200.0" mnemonicParsing="false" text="No" />
+      <RadioButton id="btnSiTiempo" fx:id="btnSiTiempo" layoutX="123.0" layoutY="200.0" mnemonicParsing="false" text="Sí" />
+      <Text layoutX="198.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puedes seleccionar la cantidad de tiempo si deseas" textAlignment="CENTER" wrappingWidth="112.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <ChoiceBox id="cmbTiempo" fx:id="cmbTiempo" layoutX="322.0" layoutY="207.0" prefHeight="26.0" prefWidth="63.0" />
+      <Text layoutX="39.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Te interesa algun tema en particular?" />
+      <Line endX="25.79998779296875" endY="212.0" layoutX="403.0" layoutY="240.0" startX="25.79998779296875" startY="-181.59999084472656" />
+      <Line endX="295.4000244140625" endY="-1.52587890625E-5" layoutX="123.0" layoutY="151.0" startX="-100.0" />
+      <Line endX="295.4000244140625" endY="-1.52587890625E-5" layoutX="122.0" layoutY="257.0" startX="-100.0" />
+      <Line endX="295.4000244140625" endY="-1.52587890625E-5" layoutX="121.0" layoutY="375.0" startX="-100.0" />
+      <Button id="btnNoTema" fx:id="btnNoTema" layoutX="32.0" layoutY="284.0" mnemonicParsing="false" onAction="#seleccionarNoTema" prefHeight="26.0" prefWidth="63.0" text="No" />
+      <Button id="btnAnimales" fx:id="btnAnimales" layoutX="127.0" layoutY="284.0" mnemonicParsing="false" onAction="#seleccionarAnimales" text="Animales" />
+      <Button id="btnDulces" fx:id="btnDulces" layoutX="221.0" layoutY="283.0" mnemonicParsing="false" onAction="#seleccionarDulces" prefHeight="26.0" prefWidth="65.0" text="Dulces" />
+      <Button id="btnJuegos" fx:id="btnJuegos" layoutX="328.0" layoutY="283.0" mnemonicParsing="false" onAction="#seleccionarJuegos" prefHeight="26.0" prefWidth="66.0" text="Juegos" />
+      <Button id="btnComida" fx:id="btnComida" layoutX="128.0" layoutY="323.0" mnemonicParsing="false" onAction="#seleccionarComida" prefHeight="26.0" prefWidth="65.0" text="Comida" />
+      <Button id="btnFlores" fx:id="btnFlores" layoutX="220.0" layoutY="323.0" mnemonicParsing="false" onAction="#seleccionarFlores" prefHeight="26.0" prefWidth="66.0" text="Flores" />
+      <Button id="btnCaricaturas" fx:id="btnCaricaturas" layoutX="328.0" layoutY="324.0" mnemonicParsing="false" onAction="#seleccionarCaricatura" text="Caricatura" />
+      <Button id="btnPaises" fx:id="btnPaises" layoutX="32.0" layoutY="324.0" mnemonicParsing="false" onAction="#seleccionarPaises" prefHeight="26.0" prefWidth="66.0" text="Países" />
+      <Button id="btnIniciarJuego" fx:id="btnIniciarJuego" layoutX="310.0" layoutY="414.0" mnemonicParsing="false" onAction="#iniciarJuego" prefHeight="26.0" prefWidth="88.0" text="Iniciar Juego" />
+      <Text layoutX="37.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Si ya configuraste tu juego puedes iniciarlo!" />
+      <Button id="btnVerProgreso" fx:id="btnVerProgreso" layoutX="481.0" layoutY="415.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" text="Ver progreso" />
+      <Button id="btnCambiarImagen" fx:id="btnCambiarImagen" layoutX="480.0" layoutY="375.0" mnemonicParsing="false" text="Cambiar imagen" />
+   </children>
+</AnchorPane>

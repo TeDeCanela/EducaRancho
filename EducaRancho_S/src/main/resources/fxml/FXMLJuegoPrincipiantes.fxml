@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.educarancho.controladores.FXMLJuegoPrincipiantesController">
+   <children>
+      <Button id="btnRegresar" fx:id="btnRegresar" layoutX="21.0" layoutY="24.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <Button id="btnReintentar" fx:id="btnReintentar" layoutX="388.0" layoutY="24.0" mnemonicParsing="false" onAction="#reintentar" text="Reintentar" />
+      <Button id="btnAyuda" fx:id="btnAyuda" layoutX="512.0" layoutY="24.0" mnemonicParsing="false" onAction="#solicitarAyuda" text="Ayuda" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccf4cf" height="79.0" layoutX="21.0" layoutY="100.0" stroke="#629139" strokeType="INSIDE" width="561.0" />
+      <Label id="lblPregunta" fx:id="lblPregunta" layoutX="38.0" layoutY="115.0" prefHeight="54.0" prefWidth="536.0" text="Label" wrapText="true" />
+      <Label layoutX="24.0" layoutY="192.0" text="Selecciona tu respuesta:" />
+      <RadioButton id="rbtnRespuesta1" fx:id="rbtnRespuesta1" layoutX="23.0" layoutY="225.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton id="rbtnRespuesta1" fx:id="rbtnRespuesta2" layoutX="23.0" layoutY="257.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton id="rbtnRespuesta3" fx:id="rbtnRespuesta3" layoutX="23.0" layoutY="287.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton id="rbtnRespuesta4" fx:id="rbtnRespuesta4" layoutX="23.0" layoutY="318.0" mnemonicParsing="false" text="RadioButton" />
+      <Button id="btnSiguientePreguntar" fx:id="btnSiguientePreguntar" layoutX="444.0" layoutY="360.0" mnemonicParsing="false" onAction="#irSiguientePregunta" text="Siguiente pregunta" />
+      <Label id="lblTema" fx:id="lblTema" layoutX="123.0" layoutY="16.0" text="Label" />
+   </children>
+</AnchorPane>
